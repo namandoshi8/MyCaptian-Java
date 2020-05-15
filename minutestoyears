@@ -1,0 +1,19 @@
+public class minutes {
+    public static void main(String[] args){
+
+        printYearsAndDays(561600);
+    }
+
+    public static void printYearsAndDays(long minutes){
+
+            if(minutes<0){
+                System.out.print("Invalid Value");
+            }else{
+                long years = minutes/525600;
+                long days = (minutes%525600)/(60*24);
+
+                System.out.print(minutes + "min = " + years + " y and " + days + " d");
+            }
+    }
+
+}
